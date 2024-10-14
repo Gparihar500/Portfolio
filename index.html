@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Govind Ahirwar - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+            color: #333;
+        }
+        nav {
+            background-color: #37474f;
+            padding: 15px 20px;
+            text-align: center;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffcc33;
+        }
+        .hero {
+            background: radial-gradient(circle at center, #009688, #004d40);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .hero p {
+            font-size: 22px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .section {
+            margin-bottom: 60px;
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+        .section:hover {
+            transform: translateY(-10px);
+        }
+        .section h2 {
+            font-size: 32px;
+            color: #009688;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .section h2 .icon {
+            margin-right: 15px;
+            font-size: 36px;
+            color: #ffcc33;
+        }
+        .about p, .education p, .experience p, .skills p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+        .skills ul, .experience ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .skills ul li, .experience ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .skills ul li::before, .experience ul li::before {
+            content: "\f00c";
+            font-family: FontAwesome;
+            margin-right: 10px;
+            color: #009688;
+            font-size: 18px;
+        }
+        .footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .footer p {
+            margin: 0;
+        }
+        .contact-info {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .contact-info p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .contact-info a {
+            color: #009688;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <!-- Link to FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Govind Ahirwar</h1>
+    <p>Experienced Office Executive with expertise in Operations Management, Payroll, and Customer Service. Welcome to my portfolio!</p>
+</div>
+
+<!-- Main Content Container -->
+<div class="container">
+
+    <!-- About Section -->
+    <div id="about" class="section about">
+        <h2><i class="fas fa-user icon"></i> About Me</h2>
+        <p>I am a dedicated and detail-oriented Office Executive with extensive experience in managing office operations, customer service, and payroll. Over the years, I have developed a strong set of administrative skills that help me handle both people and processes efficiently. I thrive in fast-paced environments and have a proven track record of ensuring smooth day-to-day office management.</p>
+        <p>Currently pursuing an MBA in IT, I am also focused on integrating modern technology and management practices to improve operational efficiency.</p>
+    </div>
+
+    <!-- Education Section -->
+    <div id="education" class="section education">
+        <h2><i class="fas fa-graduation-cap icon"></i> Education</h2>
+        <p><strong>B.Sc. in Computer Science</strong> - Barkatullah University, Bhopal (2013-2016)</p>
+        <p><strong>PGDCA</strong> - Makhan Lal Chaturvedi University, Bhopal</p>
+        <p><strong>Currently pursuing MBA in IT</strong> - Aiming to enhance my strategic and leadership skills to further grow in the field of office management and administration.</p>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="section skills">
+        <h2><i class="fas fa-tools icon"></i> Skills</h2>
+        <p><strong>Core Competencies:</strong></p>
+        <ul>
+            <li>Operational Management: Leading day-to-day office operations efficiently.</li>
+            <li>Customer Service: Managing customer queries with professionalism and care.</li>
+            <li>Team Leadership: Supervising staff and ensuring smooth operations.</li>
+            <li>Payroll Management: Handling payrolls, ESIC, PF, and other financial operations.</li>
+        </ul>
+        <p><strong>Technical Skills:</strong></p>
+        <ul>
+            <li>MS Office Suite (Excel, Word, PowerPoint)</li>
+            <li>ERP, Oracle, Zink HR, Blue Tree</li>
+            <li>Kapture CRM, Freshdesk</li>
+            <li>Basic knowledge of MySQL, Python, and Power BI</li>
+        </ul>
+    </div>
+
+    <!-- Experience Section -->
+    <div id="experience" class="section experience">
+        <h2><i class="fas fa-briefcase icon"></i> Experience</h2>
+        <ul>
+            <li><strong>Office Executive</strong> - SMC Integrated Facility Management Solution (Jan 2023 - Aug 2024): Managed operations, payroll, and staff, ensuring smooth day-to-day functions and regulatory compliance.</li>
+            <li><strong>Customer Support Executive</strong> - Technotask Business Solution (Apr 2022 - Feb 2024): Provided frontline customer support, resolving issues and ensuring customer satisfaction.</li>
+            <li><strong>Housekeeping Supervisor</strong> - VIT University (Jun 2019 - Oct 2021): Led housekeeping services, managed staff, and ensured high standards of service in a large institutional environment.</li>
+        </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="contact-info">
+        <h2><i class="fas fa-envelope icon"></i> Contact Information</h2>
+        <p>Email: <a href="mailto:Gparihar500@gmail.com">Gparihar500@gmail.com</a></p>
+        <p>Phone: +91 7879294788</p>
+    </div>
+
+</div>
+
+<!-- Footer Section -->
+<div class="footer">
+    <p>&copy; 2024 Govind Ahirwar. All rights reserved.</p>
+</div>
+
+</body>
+</html>
