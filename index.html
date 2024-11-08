@@ -1,5 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Govind Ahirwar Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .navbar a.logo {
+            background-color: transparent;
+        }
+        .navbar ul li a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .navbar ul li a:hover {
+            background-color: rgba(0, 0, 255, 0.7);
+            box-shadow: inset 0 0 10px rgba(0, 0, 255, 0.7);
+        }
+    </style>
+  </head>
+  <body>
+   
+
+    <div class="bars-wrapper">
+      <div class="bar" style="--i: 6"></div>
+      <div class="bar" style="--i: 5"></div>
+      <div class="bar" style="--i: 4"></div>
+      <div class="bar" style="--i: 3"></div>
+      <div class="bar" style="--i: 2"></div>
+      <div class="bar" style="--i: 1"></div>
+    </div>
+    
+    <section class="main" id="home">
+      <div class="main-info">
+        <h1>Govind Ahirwar</h1>
+        <h2>
+          I'm a
+          <span style="--i: 4" data-text="Office Executive">Office Executive</span>
+          <span style="--i: 3" data-text="Customer Support Executive">Customer Support Executive</span>
+          <span style="--i: 2" data-text="Facility Manager">Facility Manager</span>
+          <span style="--i: 1" data-text="IT & HR Specialist">IT & HR Specialist</span>
+        </h2>
+        <p>
+          Highly organized and detail-oriented professional with a proven track record of
+          delivering results in fast-paced environments. Skilled in operations management,
+          staff deployment, and customer satisfaction, with hands-on experience in facility
+          management, back-office support, and IT.
+        </p>
+        <div class="btn-wrapper">
+          <button class="btn" onclick="downloadCV()">Download CV</button>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/govind-ahirwar-a18691124" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100006296524217&ref=xav_ig_profile_web" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/govind_parihar500/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-img">
+        <div class="image-wrapper">
+          <div class="image">
+            <img src="img.png" alt="Govind Ahirwar" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+        function downloadCV() {
+            window.location.href = 'https://drive.google.com/file/d/164kzxEWONNIoxgT5CU04YVdnHSD7G6hG/view?usp=drive_link'; // Replace with your actual CV link
+        }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,18 +122,36 @@
             background: radial-gradient(circle at center, #009688, #004d40);
             color: white;
             text-align: center;
-            padding: 100px 20px;
+            padding: 50px 20px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), inset 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            margin: -40px auto 60px;
+            max-width: 800px;
+            text-align: center;
         }
-        .hero p {
-            font-size: 22px;
-            max-width: 600px;
-            margin: 0 auto;
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .profile p {
+            font-size: 18px;
+            max-width: 400px;
+            margin: 0;
+            line-height: 1.6;
         }
         .container {
             max-width: 1200px;
@@ -76,7 +182,7 @@
             font-size: 36px;
             color: #ffcc33;
         }
-        .about p, .education p, .experience p, .skills p {
+        .about p, .education p, .experience p, .skills p, .documents p {
             margin-bottom: 20px;
             line-height: 1.8;
             font-size: 18px;
@@ -134,17 +240,14 @@
     <a href="#education">Education</a>
     <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
+    <a href="#documents">Documents</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <!-- Hero Section -->
 <div class="hero">
-    <h1>Govind Ahirwar</h1>
-    <p>Highly organized professional with strong problem-solving abilities, seeking challenging roles in fast-paced environments. Welcome to my portfolio!</p>
+    <h1>Welcome to My Portfolio</h1>
 </div>
-
-<!-- Main Content Container -->
-<div class="container">
 
     <!-- About Section -->
     <div id="about" class="section about">
@@ -189,18 +292,33 @@
         </ul>
     </div>
 
-    <!-- Contact Section -->
-    <div id="contact" class="contact-info">
-        <h2><i class="fas fa-envelope icon"></i> Contact Information</h2>
-        <p>Email: <a href="mailto:Gparihar500@gmail.com">Gparihar500@gmail.com</a></p>
-        <p>Phone: +91 7879294788</p>
-        <p>Address: 128/1, Nipaniya Khanjar, Tehsil Kalapipal, Post Khardon Khurd, District Shajapur, MP 465337</p>
-        <p>LinkedIn: <a href="http://www.linkedin.com/in/govind-ahirwar-a18691124">linkedin.com/in/govind-ahirwar</a></p>
+   <!-- Documents Section -->
+<div id="documents" class="section documents">
+    <h2><i class="fas fa-file-alt icon"></i> Documents</h2>
+    <p>Here are some of my certificates and documents:</p>
+    <div class="document-item">
+        <img src="certificate1.jpg" alt="Certificate 1">
+        <p>Certificate 1</p>
     </div>
-
+    <div class="document-item">
+        <img src="certificate2.jpg" alt="Certificate 2">
+        <p>Certificate 2</p>
+    </div>
+    <div class="document-item">
+        <img src="resume.jpg" alt="Resume">
+        <p>Resume</p>
+    </div>
 </div>
 
-<!-- Footer Section -->
+
+<!-- Contact Section -->
+<div id="contact" class="contact-info">
+    <h2>Contact</h2>
+    <p>Email: govind.ahirwar@example.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/govindahirwar">Govind Ahirwar</a></p>
+</div>
+
+<!-- Footer -->
 <div class="footer">
     <p>&copy; 2024 Govind Ahirwar. All rights reserved.</p>
 </div>
